@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+.wrapper .container {
+  width: 800px;
+  margin: 30px auto 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #e8ecef;
+}
+.wrapper .container .pricing__item {
+  margin-left: 39px;
+  float: left;
+  width: 215px;
+  height: 315px;
+  background: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.wrapper .container .pricing__item .pricing__top {
+  height: 70px;
+  background: #7ccfed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .container .pricing__item .pricing__top .pricing__title {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 400;
+}
+.wrapper .container .pricing__item .pricing__content {
+  text-align: center;
+  margin-top: 20px;
+}
+.wrapper .container .pricing__item .pricing__content .pricing__number {
+  color: #5d5e5d;
+  font-size: 50px;
+  font-weight: 600;
+}
+.wrapper .container .pricing__item .pricing__content .pricing__text {
+  color: #5d5e5d;
+  font-size: 20px;
+  font-weight: 400;
+}
+.wrapper .container .pricing__item .pricing__line {
+  width: 80%;
+  margin: 40px auto;
+}
+.wrapper .container .pricing__item .pricing__line .line {
+  background: #e3e4e3;
+  height: 5px;
+  margin: 0 auto 15px;
+}
+.wrapper .container .pricing__item .pricing__line .line__big {
+  width: 100%;
+}
+.wrapper .container .pricing__item .pricing__line .line__small {
+  width: 80%;
+}
+.wrapper .container .pricing__item:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 19px -3px rgba(0, 0, 0, 0.36);
+}
+.wrapper .container .pricing__item:hover .pricing__top {
+  background: #63a6c0;
+  transition: 0.4s;
+}
+.wrapper .container .pricing__item:hover .pricing__number, .wrapper .container .pricing__item .pricing__text {
+  color: #63a6c0;
+}
+.wrapper .container .progress__block {
+  background: #ffffff;
+  width: 96%;
+  margin: 30px auto;
+  padding: 15px 0;
+}
+.wrapper .container .progress__block .progress__item {
+  width: 90%;
+  margin: 15px auto;
+}
+.wrapper .container .progress__block .progress__item .progress__top {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .container .progress__block .progress__item .progress__top .progress__top__left,
+.wrapper .container .progress__block .progress__item .progress__top .progress__top__right {
+  color: #5d5e5d;
+  margin-bottom: 5px;
+}
+.wrapper .container .progress__block .progress__item .progress {
+  width: 100%;
+  height: 15px;
+  background: #e8ecef;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.wrapper .container .progress__block .progress__item .progress__color {
+  position: absolute;
+  background: #7ccfed;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+.wrapper .container .basic:hover ~ .progress__block > .progress__item > .progress > .progress__color {
+  left: -90%;
+}
+.wrapper .container .pro:hover ~ .progress__block > .progress__item > .progress > .progress__user__color {
+  left: -75%;
+}
+.wrapper .container .pro:hover ~ .progress__block > .progress__item > .progress > .progress__project__color {
+  left: -50%;
+}
+.wrapper .container .pro:hover ~ .progress__block > .progress__item > .progress > .progress__gb__color {
+  left: -30%;
+}
+.wrapper .container .premium:hover ~ .progress__block > .progress__item > .progress > .progress__color {
+  left: 0;
+}
+@media screen and (max-width: 818px) {
+  .wrapper .container {
+    width: 100%;
+  }
+  .wrapper .container .pricing__item {
+    margin: 39px auto 0 auto;
+    float: none;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+/*# sourceMappingURL=style.css.map */
